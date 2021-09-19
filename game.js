@@ -63,7 +63,7 @@ function drawSnake() {
 function updateSnake() {
 
 	for (let i = snakeBody.length - 2; i >= 0; i--) {
-		snakeBody[i + 1] = { ...snakeBody[i] } /**Figure out why this needs to exist**/
+		snakeBody[i + 1] = { ...snakeBody[i] }
 	}
 
 	snakeBody[0].x += direction.x
